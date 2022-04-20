@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1 style="font-size: 40px; font-weight: 800;text-align: center;">Student Responses</h1>
+    <div style="border: 1px solid black; padding: 40px; background-color: grey;">
+        <h1 style="color: black;" >Result</h1>
+        <span style="font-weight: 800; font-size: 28px;">Roll no :</span>
+    <span style=" font-size: 28px;" th:text="${greeting.id}" />
+    <br>
+    <span  style="font-weight: 800; font-size: 28px;">Data :</span>
+    <span style=" font-size: 28px;" th:text="${greeting.content}" />
+    <br>
+    <br>
+    <a  style="border: 2px solid black; background-color: #fff; padding: 10px; font-size: 16px; border-radius: 20px;" href="/greeting">Submit another response</a>
+    </div>
+	
+</body>
+</html>
